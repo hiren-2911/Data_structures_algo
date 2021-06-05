@@ -13,16 +13,6 @@ struct Node
     }
 };
 
-void bftraverse(Node *root)
-{
-    cout<<root->key<<endl;
-    while(root!=NULL)
-    {
-        cout<<root->left->key<<endl;
-        cout<<root->right->key<<endl;
-        root=root->left;
-    }
-}
 void dftraverse(Node *root)
 {
     if(root!=NULL)
